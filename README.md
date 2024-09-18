@@ -5,8 +5,7 @@ This tool helps you gain insights into your WhatsApp conversations by analyzing 
 For demo link :- https://whatsapp-chat-analizer-nikhil1205-ai.onrender.com
 <br>
 <br>
-# First go to phone Whatsapp then More>Exportchat>Without Media
-download the file and save....
+## First go to phone Whatsapp then More>Export chat>Without Media download the file and save....
 <br>
 <br>
 ## Open the link
