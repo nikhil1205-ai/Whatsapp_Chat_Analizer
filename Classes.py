@@ -192,6 +192,8 @@ class Plot_libary:
         df=self.df
         list=Message_preprocessing(df)
         text=" ".join(list)
+        if len(text)==0:
+          text+="No Word"
         wc=WordCloud(width=400,height=400,background_color="white",stopwords = set(STOPWORDS)).generate(text)
         fig, axis = plt.subplots()
         axis.imshow(wc)
