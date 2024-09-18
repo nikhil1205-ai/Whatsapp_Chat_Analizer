@@ -66,7 +66,10 @@ def Preprocess_data(file):
      data=pd.DataFrame({"date_time_file":date_time_file,"text":text})
      data.drop(0,axis=0,inplace=True)
 
-     data["date"]=pd.to_datetime(data["date_time_file"].apply(lambda x:re.findall(r"\d{1,2}/\d{1,2}/\d{1,3}",x)[0]),format="%d/%m/%y")
+     try:
+          data["date"]=pd.to_datetime(data["date_time_file"].apply(lambda x: re.findall(r"\d{1,2}/\d{1,2}/\d{1,3}",x)[0]),format="%d/%m/%y",errors="ignore",exact=False)
+     except:
+          data["date"]=pd.to_datetime(data["date_time_file"].apply(lambda x:re.findall(r"\d{1,2}/\d{1,2}/\d{1,3}",x)[0]),format="%d/%m/%Y",errors="ignore",exact=False)
      data["time"]=data["date_time_file"].apply(lambda x:re.findall(r"\d{1,2}:\d{1,2}\s+\w+",x)[0])
      data["time_baje"]=data["time"].apply(lambda x:re.findall("\d{1,2}:\d{1,2}",x)[0])
      data["time_ap"]=data["time"].apply(lambda x:re.split("\d{1,2}:\d{1,2}",x)[1])
