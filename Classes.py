@@ -14,7 +14,7 @@ from datetime import datetime
 import gensim
 from gensim.utils import simple_preprocess
 from sklearn.neighbors import NearestNeighbors
-#nltk.download('stopwords')
+nltk.download('stopwords')
 
 ## user list
 def user_list(col):
