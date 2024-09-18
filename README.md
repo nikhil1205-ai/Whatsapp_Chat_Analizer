@@ -21,5 +21,5 @@ For demo link :- https://whatsapp-chat-analizer-nikhil1205-ai.onrender.com
 <br>
 <br>
 ## Run Analsis
-![Uploading Screenshot (8).png…]()
+![Screenshot (8)](https://github.com/user-attachments/assets/263835ed-cf20-487b-842e-1b4d5e8ac560)
 <br>
