@@ -3,6 +3,11 @@ from Classes import *
 
 #👉👉👉Streamlit
 
+st.set_page_config(
+    page_title="Watsapp Analizer",
+    layout="wide",
+    initial_sidebar_state="expanded")
+
 st.sidebar.title(":blue[Watsapp Analizer]📈📉")
 file=st.sidebar.file_uploader("Upload your file")
 st.sidebar.write("")
